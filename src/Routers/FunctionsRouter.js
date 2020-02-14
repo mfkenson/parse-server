@@ -64,6 +64,7 @@ export class FunctionsRouter extends PromiseRouter {
       log: req.config.loggerController,
       headers: req.config.headers,
       ip: req.config.ip,
+      database: req.config.databse,
       jobName,
       message: jobHandler.setMessage.bind(jobHandler),
     };
@@ -147,6 +148,7 @@ export class FunctionsRouter extends PromiseRouter {
       log: req.config.loggerController,
       headers: req.config.headers,
       ip: req.config.ip,
+      database: req.config.databse,
       functionName,
     };
 
